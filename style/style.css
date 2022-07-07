@@ -1,0 +1,314 @@
+
+/*Из-за сложного позиционирования блоков в макете ( у меня по макету блок №3 наплывает на блок №2 и блок №4, пока что сделал их отдельными блоками 
+
+/*убираем маркировку списка*/
+ul { 
+    list-style: none; 
+}
+
+.clearfix {
+    clear:both;
+}
+.fl {
+    float:left;
+}
+/* картинку обтекаем справа*/
+.fr{
+    float:right
+}
+.of {
+    overflow: auto;
+}
+/*максимальная ширина сайта*/
+.container-big {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    overflow: auto;
+}
+
+/*максимальная ширина сайта*/
+.container-main {
+    width: 100%;
+    max-width: 1440px;
+}
+/*                                                    1й блок-------------------------------------------------------*/
+.size_ls{
+    max-width: 270px;
+    max-height: 95px;
+    margin-left: 165px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.size_rs{
+    max-width: 840px;
+    max-height: 95px;
+    margin-right: 165px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header_text {
+    text-transform: uppercase;
+    font-family: 'Alegreya' ;
+    font-size: 24px ;
+    line-height: 14px ;
+    color: #34C759;
+    /*выравниваю положение тексата оносительно лого*/
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.navigation-wrap li {
+    float:left;
+}
+/* для ссылок в меню навигации увеличиваю область срабатывания*/
+.navigation-wrap li a {
+    padding:10px 10px;
+}
+/*выравниваю по правому краю + .шрифты*/
+.step {
+    font-family: 'Alegreya SC' ;
+    font-size: 14px;
+    line-height: 14px ;
+    /*color: #FFFFFF ;*/
+    margin-left: 340px;
+}
+/*стиль меню навигации*/
+.step a{
+    font-family: 'Alegreya SC' ;
+    font-size: 14px;
+    line-height: 14px ;
+    /*color: #FFFFFF ;*/
+}
+
+/*-------------------------------------------------------------------- блок 2------------------------------------------------------ */
+/*Размер блока*/
+.delivery {
+    max-width: 1440px;
+    height: 390px;
+}
+/*шрифт заголовка блока 2*/
+.delivery h1 {
+    font-family: 'Alegreya' ;
+    font-size: 72px;
+    line-height: 72px ;
+}
+/*расположение заголовка блока2*/
+.container-main h1 {
+    width: 100%;
+    width: 1035px;
+    height: 165px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    margin-right: 170px;
+    text-align: center;
+}
+.add_inf{
+    margin-left: 300px;
+}
+.blok {
+    text-align: center;
+    margin-right: 210px;
+    padding-left: 10px;
+}
+.blok p {
+    font-family: 'Alegreya' ;
+    font-size: 16px;
+    line-height: 30px ;
+    /*color: #FFFFFF;*/
+}
+.blok span {
+    font-family: 'Montserrat' ;
+    font-size: 14px;
+    line-height: 18px ;
+    /*color: #FFFFFF 75%;*/
+}
+
+/*-------------------------------------------------------------------- блок 3------------------------------------------------------ */
+
+.lunch {
+    width: 1200px;
+    height: 585px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+.list_of_dishes {
+    margin-left: 205px;
+    max-width: 380px;
+    max-height: 375px;
+    text-align: left;
+}
+
+.div_size {
+    width: 1100px ;
+    height: 480px;
+
+}
+
+/*Стили*/
+.lunch h1 {
+    font-family: 'Montserrat' ;
+    font-size: 36px;
+    line-height: 24px ;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    color: #34C759;
+    text-align: center;
+}
+.list_of_dishes b {
+    font-family: 'Montserrat' ;
+    font-size: 14px;
+    line-height: 17px ;
+    font-style: normal;
+    font-weight: 600;
+    /*color: #FFFFFF;*/
+}
+.ft{
+    font-family: 'Alegreya' ;
+    font-size: 18px;
+    line-height: 24px ;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    /*color: #FFFFFF;*/
+}
+.list_of_dishes p {
+    font-family: 'Alegreya' ;
+    font-size: 13px;
+    line-height: 18px ;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;/*разрыв между строками*/
+    /*color: #FFFFFF;*/
+}
+
+/* у меня по макету полоса идет шириной 0рх, сделал 12 чтобы увидеть её цвет. почемуто он не отображаеться, хотя применился*/
+.list_of_dishes hr{
+    color: #34C759;
+    padding-top: 12px;
+}
+/*через псевдоєлемент как на уроке, не получилось сделать зеленую линию*/
+
+/*картинка*/
+.food1 {
+    width: 380px; 
+    height: 330px;
+    margin-right: 105px;
+    margin-bottom: 20px;
+}
+
+.round_btn1 {
+    background-color: #252525;
+    border: 3px solid #34C759;
+    border-radius: 20%;
+    height: 34px;
+    width: 160px;
+    margin-left: 535px;
+}
+/*увеличиваю область кликабельности ссылки*/
+.round_btn1 a{
+    padding:15px 48px;
+}
+/*позиционируем картинку и текст*/
+.round_btn1 img{
+    padding-top: 13px;
+}
+
+/*-------------------------------------------------------------------- Ссылки переходы----------------------------------------------- */
+/*размеры блока*/
+.cross-over{
+    width: 1440px;
+    height: 360px;
+    margin-left: 320px;
+    margin-right: 320px;
+}
+/*размещение*/
+.blok2 {
+    text-align: center;
+    margin-right: 200px;
+}
+
+/* круглая рамка с картинкой*/
+.round {
+    background-color: #252525;
+    border: 3px solid #34C759;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+/*увеличиваю область кликабельности ссылки*/
+.cross-over a{
+    padding:90px 35px;
+}
+/*позиционируем картинку и текст*/
+.cross-over img{
+    padding-top: 30px;
+}
+/*в данном случае применил h3 вместо р , и-за того, что валидатор попросил использовать в секции h*/
+.cross-over h3{
+    padding-top: 40px;
+}
+
+/*-------------------------------------------------------------------- 4й блок------------------------------------------------------- */
+/*размеры секции*/
+.make_your_own_pizza {
+    width: 1440px;
+    height: 555px;
+    overflow: auto;
+}
+/*размеры блоков*/
+.make_your_own_pizza h1{
+    width: 280px;
+    height: 90px;
+}
+.make_your_own_pizza p {
+    width: 480px;
+    height: 60px;
+}
+/*выравниваю блок по правую сторону*/
+
+/*Стили*/
+.make_your_own_pizza h1{
+    font-family: 'Montserrat' ;
+    font-size: 36px;
+    line-height: 44px ;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 735px;
+    margin-bottom: 40px;
+    color: #34C759;
+}
+.make_your_own_pizza p {
+    font-family: 'Montserrat' ;
+    font-size: 24px;
+    line-height: 29px ;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 735px;
+    margin-bottom: 60px;
+    /*color: #FFFFFF;*/
+}
+
+.round_btn2 {
+    background-color: #252525;
+    border: 3px solid #34C759;
+    border-radius: 20%;
+    height: 34px;
+    width: 160px;
+    margin-left: 735px;
+}
+
+/*увеличиваю область кликабельности ссылки*/
+.round_btn2 a{
+    padding:15px 48px;
+}
+/*позиционируем картинку и текст*/
+.round_btn2 img{
+    padding-top: 13px;
+}
